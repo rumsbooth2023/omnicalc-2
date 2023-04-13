@@ -43,7 +43,7 @@ class MathController < ApplicationController
     @first = params.fetch("first_num").to_f
     @second = params.fetch("second_num").to_f
 
-    @addition = @first / @second
+    @division = @first/@second
     render({ :template => "math_templates/division_results.html.erb" })
   end
 end
